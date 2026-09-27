@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login ke mini.shop." />
+    <title>Login — mini.shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+    <script src="./js/login.js" defer></script>
+  </head>
+  <body class="login-body">
+    <main class="login-page">
+      <a class="logo login-logo" href="./login.html">mini<span>.</span>shop</a>
+
+      <section class="login-card" aria-labelledby="loginTitle">
+        <div class="login-heading">
+          <span class="eyebrow">Selamat datang di mini.shop</span>
+          <h1 id="loginTitle">Selamat datang kembali</h1>
+          <p>Masuk untuk melanjutkan belanja.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <label class="form-field" for="username">
+            <span>Username</span>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              placeholder="Masukkan username"
+              required
+            />
+          </label>
+
+          <label class="form-field" for="password">
+            <span>Password</span>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Masukkan password"
+              required
+            />
+          </label>
+
+          <button class="button button-primary login-button" id="loginButton" type="submit">
+            <span class="button-label">Login</span>
+            <span class="spinner hidden" aria-hidden="true"></span>
+          </button>
+
+          <div class="login-error hidden" id="loginError" role="alert">
+            <span aria-hidden="true">!</span>
+            <p id="loginErrorMessage"></p>
+          </div>
+        </form>
+      </section>
+
+      <p class="login-footnote">Marketplace kecil untuk pilihan sehari-hari.</p>
+    </main>
+  </body>
+</html>
