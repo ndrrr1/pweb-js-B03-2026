@@ -1,4 +1,4 @@
-# pweb-html_css-B03-2026
+# pweb-js-B03-2026
 ## REPORTING
 Dikerjakan oleh: 
 1. Ndaru Satria Tama (5027251124)
